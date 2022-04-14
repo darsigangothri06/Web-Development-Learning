@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+    <h2 id="calName">Calculator</h2>
+    <div id="container">
+        <div id="inputNumbers" align='center'>
+            <input type="text" name="answer" id="answer">
+        </div>
+        <div id="container-buttons">
+            <table align="center">
+                <tr>
+                    <td><button id="num7" onclick="answer.value += '7'">7</button></td>
+                    <td><button id="num8" onclick="answer.value += '8'">8</button></td>
+                    <td><button id="num9" onclick="answer.value += '9'">9</button></td>
+                    <td><button id="division" onclick="answer.value += '/'">/</button></td>
+                </tr>
+                <tr>
+                    <td><button id="num4" onclick="answer.value += '4'">4</button></td>
+                    <td><button id="num5" onclick="answer.value += '5'">5</button></td>
+                    <td><button id="num6" onclick="answer.value += '6'">6</button></td>
+                    <td><button id="multiply" onclick="answer.value += '*'">x</button></td>
+                </tr>
+                <tr>
+                    <td><button id="num1" onclick="answer.value += '1'">1</button></td>
+                    <td><button id="num2" onclick="answer.value += '2'">2</button></td>
+                    <td><button id="num3" onclick="answer.value += '3'">3</button></td>
+                    <td><button id="subtract" onclick="answer.value += '-'">-</button></td>
+                </tr>
+                <tr>
+                    <td><button id="num0" onclick="answer.value += '0'">0</button></td>
+                    <td><button id="point" onclick="answer.value += '.'">.</button></td>
+                    <td><button id="result" onclick="answer.value = eval(answer.value)">=</button></td>
+                    <td><button id="add" onclick="answer.value += '+'">+</button></td>
+                </tr>
+            </table>
+            <div align="center">
+                <input type="button" value="Clear ALL" id="clear" onclick="answer.value = ''">
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
