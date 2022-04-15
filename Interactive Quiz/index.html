@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="container">
+
+        <!--    Start Section     -->
+        <div id="start"> <span>Start Quiz</span>
+            <p> <br> 20JR1A4306 <br> Gangothri Darsi</p>
+        </div>
+
+        <!--    Guide Section    -->
+        <div id="guide">
+            <h2>Quiz Guide</h2>
+            <h4>1. You Have 5 Minutes, Each question has 30 seconds.</h4>
+            <h4>2. You can select the answer only once.</h4>
+            <h4>3. Correct answer carries 1 point.</h4>
+            <h4>4. There is no negative marking system.</h4>
+
+            <div id="button">
+                <button id="exit">Exit</button>
+                <button id="continue">Continue</button>
+            </div>
+        </div>
+
+        <!--    Quiz Section    -->
+        <div id="quiz">
+
+            <div id="quiz_header">
+                <h5>Web Development Quiz Game</h5>
+                <div id="timer">
+                    <h6>Time Left</h6>
+                    <h6 id="time">00</h6>
+                </div>
+            </div>
+
+            <!--     Quiz Questions  -->
+
+            <div id="question">
+                <h2 id="questionNo"></h2>
+                <h2 id="questionText"></h2>
+            </div>
+
+            <!--       Quiz Choices   -->
+
+            <div id="optionList">
+                <h4 class="choice_que" id="option1"></h4>
+                <h4 class="choice_que" id="option2"></h4>
+                <h4 class="choice_que" id="option3"></h4>
+                <h4 class="choice_que" id="option4"></h4>
+            </div>
+
+            <!--  Answers Section-->
+
+            <div id="answersSection">
+                <h3 id="total_correct"></h3>
+                <h3 id="next_question">Next</h3>
+            </div>
+        </div>
+        <!--   Result Section  -->
+        <div id="result">
+            <span align="center" class="fas fa-trophy">&#127942;</span>
+            <h6>Congratulations !!! <br>You have completed The Quiz</h6>
+            <h6 id="points"></h6>
+            <button id="quit">Quit Quiz</button>
+            <button id="startAgain">Start Again</button>
+        </div>
+    </div>
+    <script src="script.js" type="text/javascript"></script>
+</body>
+
+</html>
