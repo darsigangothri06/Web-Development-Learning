@@ -141,7 +141,7 @@ exit.addEventListener("click", () => {
 //Creating Timer For Quiz Timer Section
 
 let countDown = () => {
-    if (timer === 30) {
+    if (timer === 0) {
 
         // display correct answer to the user
         choice_que[MCQS[index].answer].classList.add("correct");
@@ -150,8 +150,8 @@ let countDown = () => {
         }
         clearInterval(interval);
     } else {
-        // Increment time
-        timer++;
+        // Decrement time
+        timer--;
         time.innerText = timer;
     }
 }
@@ -165,7 +165,7 @@ let loadData = () => {
     option4.innerText = MCQS[index].choice4;
 
     // Start the time
-    timer = 0;
+    timer = 30;
 }
 
 loadData();
